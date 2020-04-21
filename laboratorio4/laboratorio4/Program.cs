@@ -8,14 +8,22 @@ namespace laboratorio4
         
         static void Main(string[] args)
         {
-            int piezas = 10;
+            Random Num = new Random();
+            int piezas = Num.Next(1,50);
 
-            Reception recepcion = new Reception(7);
-            Storage almacenamiento = new Storage(2);
-            Assembly ensamblaje = new Assembly(10);
-            Check verificacion = new Check(3);
-            Packing empaque = new Packing(1);
-           
+            Reception recepcion = new Reception(Num.Next(1, 50));
+            Storage almacenamiento = new Storage(Num.Next(1, 50));
+            Assembly ensamblaje = new Assembly(Num.Next(1, 50));
+            Check verificacion = new Check(Num.Next(1, 50));
+            Packing empaque = new Packing(Num.Next(1, 50));
+
+            Console.WriteLine("pasaran un total de "+piezas+" piezas");
+            Console.WriteLine("recepcion tiene una memoria de: "+recepcion.getMemory());
+            Console.WriteLine("almacenamiento tiene una memoria de: " + almacenamiento.getMemory());
+            Console.WriteLine("ensamblaje tiene una memoria de: " + ensamblaje.getMemory());
+            Console.WriteLine("verificacion tiene una memoria de: " + verificacion.getMemory());
+            Console.WriteLine("empaque tiene una memoria de: " + empaque.getMemory());
+
             CentralComputer[] Mlist = { recepcion, almacenamiento, ensamblaje, verificacion, empaque};
 
             for (int j = 0; j < Mlist.Length ; j++)

@@ -32,7 +32,7 @@ namespace laboratorio4
         }
         public override string TurnOff()
         {
-            return "la maquin a de packing se apago";
+            return "la maquina de packing se apago";
         }
         public void SumMemory()
         {

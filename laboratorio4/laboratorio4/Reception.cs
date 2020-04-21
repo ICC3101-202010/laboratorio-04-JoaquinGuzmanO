@@ -33,7 +33,7 @@ namespace laboratorio4
         }
         public override string TurnOff()
         {
-            return "la maquin a de recepcion se apago";
+            return "la maquina de recepcion se apago";
         }
         public void SumMemory()
         {

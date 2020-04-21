@@ -15,7 +15,6 @@ namespace laboratorio4
         {
             Console.WriteLine(TurnOn());
         }
-
         public void TurnOffAll()
         {
             Console.WriteLine(TurnOff());

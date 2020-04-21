@@ -32,7 +32,7 @@ namespace laboratorio4
         }
         public override string TurnOff()
         {
-            return "la maquin a de cerificación se apago";
+            return "la maquina de cerificación se apago";
         }
         public void SumMemory()
         {
